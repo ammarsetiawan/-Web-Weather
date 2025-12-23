@@ -255,7 +255,7 @@ function clearHourlyForecast() {
 // Function to get weather icon based on weather id
 function getWeatherIcon(weatherId) {
   if (weatherId === 800) {
-    return "icons/clear.png";
+    return "/icons/clear.png";
   } else if (weatherId >= 200 && weatherId <= 232) {
     return "icons/storm.svg";
   } else if (weatherId >= 600 && weatherId <= 622) {
@@ -323,3 +323,15 @@ function getTheme() {
 }
 
 getTheme(); // Initialize theme on page load
+
+
+// back
+function goBack() {
+ 
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    
+    window.location.href = '/';
+  }
+}
