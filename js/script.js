@@ -327,7 +327,5 @@
 
   // back
   function goBack() {
-  
-    window.location.reload();
-  }\
-
+window.location.href = window.location.href;
+  }
