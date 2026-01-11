@@ -329,6 +329,6 @@ function goBack() {
     window.history.back();
   } else {
     
-    window.location.href = '/';
+    window.location.href = 'index.html';
   }
 }
