@@ -281,7 +281,7 @@ arrowBack.addEventListener("click", () => {
 var isDark = false;
 const colors = [
   "hsla(0, 92%, 52%, 0.63)",
-  "hsla(100, 80%, 50%, 0.66)",
+  "#1f1e1eff",
   "hsla(200, 80%, 50%, 0.70)",
   "hsl(227, 66%, 55%)",
   "hsl(26, 80%, 50%)",
@@ -289,15 +289,12 @@ const colors = [
   "hsla(251, 83%, 55%, 1.00)",
   "hsl(480, 100%, 25%)",
   "hsl(180, 100%, 25%)",
+  
 ];
 const colorBtns = document.querySelectorAll(".theme-color");
 const darkModeBtn = document.querySelector(".dark-mode-btn");
 
-// dark mode
-darkModeBtn.addEventListener("click", () => {
-  isDark = !isDark;
-  changeTheme(isDark ? "#1f1e1eff" : colors[3]);
-});
+
 
 colorBtns.forEach((btn, index) => {
   btn.style.backgroundColor = colors[index];
